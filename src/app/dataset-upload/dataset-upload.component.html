@@ -1,0 +1,5 @@
+<input type="file" (change)="onFileSelected($event)">
+<button (click)="uploadDataset()">Upload Dataset</button> &nbsp;
+<button (click)="loadDataset()">Load Dataset</button>
+<app-scatter-plot [chartData] = "chartData" *ngIf="chartData"></app-scatter-plot>
+
